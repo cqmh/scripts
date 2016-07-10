@@ -32,3 +32,4 @@ sudo docker rm ${deployName}
 #发布新镜像并上传私库
 sudo docker run -d --name ${deployName} -p ${port}:8080 10.10.107.114:5000/cqzk/tomcat-${deployName}
 sudo docker push 10.10.107.114:5000/cqzk/tomcat-${deployName}
+
